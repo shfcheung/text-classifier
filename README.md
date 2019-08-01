@@ -113,9 +113,9 @@ The following documents will be saved at the file path specified for the argumen
 - `model_name_vocab.txt` : A `.txt` file that stores the corresponding vocabularies in the embedding layer of the Neural Network model.
 - `invalid_label_train.feather` : A `.feather` file that contains data records in the training file which the labels are invalid (not present in the `class_file`).
 - `invalid_label_valid.feather` : A `.feather` file that contains data records in the validation file which the labels are invalid (not present in the `class_file`).
-- `uninformative_train.feather` : A `.feather` file that contains data records in the training file that are considered uninformative. A uninformative text input satisfy either one of the following conditions:
-(i)		All word tokens are trimmed away during text cleansing process.
-(ii)	All word tokens are not in the vocabulary list of the Word2vec model.
+- `uninformative_train.feather` : A `.feather` file that contains data records in the training file that are considered uninformative. A uninformative text input satisfy either one of the following conditions:  
+(i)	All word tokens are trimmed away during text cleansing process.  
+(ii)	All word tokens are not in the vocabulary list of the Word2vec model.  
 - `uninformative_valid.feather` : A `.feather` file that contains data records in the validation file that are considered uninformative.
 
 ***
