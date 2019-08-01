@@ -179,7 +179,8 @@ def main(_):
     validate_flags_or_throw(FLAGS)
 
     # user defined dictionary for better Chinese token segmentation
-    jieba.load_userdict(FLAGS.jieba_user_dict)
+    if FLAGS.jieba_user_dict is not None:
+        jieba.load_userdict(FLAGS.jieba_user_dict)
 
     # create directory if it doesn't exist
     if not FLAGS.do_single_predict:
@@ -572,5 +573,4 @@ def main(_):
 
 
 if __name__ == "__main__":
-    flags.mark_flag_as_required("jieba_user_dict")
     tf.app.run()
