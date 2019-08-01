@@ -177,56 +177,7 @@ $ python textclassifier.py \
 	--num_threads=12 \
 	--do_single_predict=True
 ```
-**Sample command line output**
-```
-Loading trained model...
-Time taken for loading the model: 10.40
 
-Input text here: samsung mobile
-   Normalizing full-width characters...
-   Converting English letters to lower case...
-   Translating Chinese Simplified to Traditional...
-   Separating Chinese amd English word tokens from each other...
-   Segmenting Chinese vocabularies...
-   Removing punctuation...
-   Word Piece Segmentation...
-Prediction in progress...
-1/1 [==============================] - 0s 156ms/step
-
-Predictions:
-1. Telecommunications, video and sound apparatus
-   74.17%
-2. Machinery, other than office machines, data processing machines, telecom, video and sound apparatus
-   20.86%
-3. Other manufactured articles
-   1.30%
-Time taken for prediction: 0.73
-
-Do you want to start a new prediction (Y/N)? Y
-
-Input text here: apple
-   Normalizing full-width characters...
-   Converting English letters to lower case...
-   Translating Chinese Simplified to Traditional...
-   Separating Chinese amd English word tokens from each other...
-   Segmenting Chinese vocabularies...
-   Removing punctuation...
-   Word Piece Segmentation...
-Prediction in progress...
-1/1 [==============================] - 0s 3ms/step
-
-Predictions:
-1. Vegetables and fruit
-   81.08%
-2. Other edible products and preparations
-   4.41%
-3. Other chemicals and related products
-   1.47%
-Time taken for prediction: 0.55
-
-Do you want to start a new prediction (Y/N)? N
-****************End of program****************
-```
 **Note**:
 -	If the PC/server is equipped with GPU, by default the program will run on GPU. 
 -	To force the program to run on **CPU**, put the argument `CUDA_VISIBLE_DEVICES=-1` before the `python` keyword on command line.
@@ -236,6 +187,7 @@ Do you want to start a new prediction (Y/N)? N
 
 ## Appendix II :  Arguments in the Python3 main program `textclassifier.py`
 The table below is the available arguments of the model:
+
 | ARGUMENT            | DESCRIPTION                                                                                                                                                                                                                                                                        | DEFAULT VALUE |
 |:--------------------|:-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|:--------------|
 | model_name          | The name of the Neural Network Model.                                                                                                                                                                                                                                               | None          |
