@@ -5,7 +5,7 @@ gensim==3.7.3
 jieba==0.39
 json==2.0.9
 keras==2.2.4
-numpy==1.16.3
+numpy==1.22.0
 opencc-python-reimplemented==0.1.4
 pandas==0.24.2
 sklearn==0.21.1
